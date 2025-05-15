@@ -51,10 +51,12 @@
         color: white;
         margin: 0px 10px;
         padding: 10px;
+        cursor: pointer;
     }
     #courses .nav{
         display: flex;
         flex-direction: row;
+        margin: 0px 30px;
         /* justify-content:space-around; */
     }
     #courses .nav #fullstack{
@@ -67,7 +69,7 @@
         /* margin: 20px; */
     }
     #courses .students img{
-        width: 220px;
+        width: 235px;
         border: 5px solid white;
         margin: 10px 5px;
         border-radius: 5px;
