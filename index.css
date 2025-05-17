@@ -181,3 +181,58 @@
         right: 10px;
         
     }
+
+     .background{
+    background-color: black;
+ }
+ 
+ 
+ body {
+            color: white;
+        }
+
+        .instructors-section {
+            padding: 40px 20px;
+        }
+
+        .instructors-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: red;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            height: 300px;
+            width: 300px;
+            background-color: #1a1a1a;
+            border: none;
+            color: white;
+            transition: transform 0.3s ease;
+            margin: 10px;
+            gap: 2px;
+        }
+
+        .card:hover {
+            transform: scale(1.08);
+        }
+
+        .card-body i {
+            color: brown;
+            font-size: 1.2rem;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .card img {
+            height: 500px;
+            object-fit: cover;
+        }
+        .container{
+            display: flex ;
+            width: 100%;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
