@@ -231,7 +231,10 @@
         }
 
         .card-body i {
-            color:#dc143c;
+            color:white;
+            background-color: #dc143c;
+            padding: 5px;
+            border-radius: 5px;
             font-size: 1.2rem;
             margin: 0 5px;
             cursor: pointer;
