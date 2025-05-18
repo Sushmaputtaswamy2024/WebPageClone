@@ -297,11 +297,14 @@
       font-size: 0.95rem;
       color: #333;
     }
-    i{
-      color: #dc143c; /* or use red / #ff0000 if you prefer */
+    .contact-container i{
+     color: #dc143c; /* or use red / #ff0000 if you prefer */
       font-size: 30px; /* Adjust size as needed */
       margin-bottom: 10px;
-  }
+    }
+    .mb-3 i:hover{
+      color: #dc143c; /* or use red / #ff0000 if you prefer */
+    }
   form input{
       margin: 10px;
       /* display: flex; */
