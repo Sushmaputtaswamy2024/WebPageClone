@@ -281,6 +281,10 @@
      
       width: 300px;
     }
+    #Location iframe{
+      width:800px;
+    }
+   
 
     .about-card i {
       font-size: 2.5rem;
