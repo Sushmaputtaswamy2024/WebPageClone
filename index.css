@@ -1,16 +1,19 @@
-.menu-bar {
+#nav-Courosel{
+    height: 800px;
+}
+#nav-Courosel .menu-bar {
   background-color: white;
   padding: 10px 20px;
   font-family: Arial, sans-serif;
 }
 
-.menu-container {
+#nav-Courosel .menu-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.menu-links {
+#nav-Courosel .menu-links {
   list-style: none;
   display: flex;
   gap: 20px;
@@ -18,7 +21,7 @@
   padding: 0;
 }
 
-.menu-link {
+#nav-Courosel .menu-link {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
@@ -26,62 +29,59 @@
   transition: color 0.3s ease;
 }
 
-.menu-link:hover {
+#nav-Courosel .menu-link:hover {
   color: crimson;
 }
 
 
-.slider {
+#nav-Courosel .slider {
   position: relative;
   overflow: hidden;
 }
 
-.slide {
+#nav-Courosel .slide {
   position: relative;
 }
 
-.slide img {
+#nav-Courosel.slide img {
   width: 100%;
   height: auto;
   display: block;
-}
-.content{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 800px;
+ }
+
+
+#nav-Courosel .slide-content {
   position: absolute;
-  bottom: 40px;
-  left: 400px;
-  
-}
-
-
-.slide-content {
+  bottom: 260px;
+  left: 350px;
   color: white;
   padding: 20px;
   max-width: 400px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  justify-content: center;
 }
 
-.slide:hover .slide-content {
+#nav-Courosel .slide:hover .slide-content {
     opacity: 1;
   
 
 }
 
-.slide-content h2 {
+#nav-Courosel .slide-content h2 {
   font-size: 2rem;
   margin-bottom: 10px;
   color: crimson;
 }
 
-.slide-content p {
+#nav-Courosel .slide-content p {
   margin-bottom: 15px;
   font-weight: 500;
 }
+ 
 
 
-.btn {
+#nav-Courosel .btn {
   padding: 8px 16px;
   border: none;
   font-weight: bold;
@@ -89,17 +89,124 @@
   cursor: pointer;
 }
 
-.btn.red {
+#nav-Courosel .btn.red {
   background-color: crimson;
   color: white;
 }
 
-.btn.yellow {
+#nav-Courosel .btn.yellow {
   background-color: gold;
   color: black;
 }
 
-      #about h1{
+body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    #about-section {
+        height: 400px;
+      background-color:white;
+      padding: 60px 0;
+      text-align: center;
+      font-size:calc(1.375rem + 1.5vw) ;
+    }
+
+    #about-section h1 {
+      color:#dc3545;
+      font-weight: 30;
+
+    }
+
+    .card-box {
+      display: flex;
+      justify-content: center;
+      /* gap: 30px; */
+      /* flex-wrap: wrap; */
+    }
+
+    .about-card {
+      background: white;
+      padding: 30px;     
+      width: 300px;
+    }
+
+    .about-card i {
+      font-size: 30px;
+      color: #000;
+      margin-bottom: 15px;
+    }
+
+    .about-card h6 {
+      font-weight: bold;
+    }
+
+    .about-card p {
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+
+
+    #Instructor{
+    background-color: black;
+    margin: 40px;
+    height: 290vh;
+ }
+        #Instructor .instructors-title {
+            font-size: 2.5rem;
+            font-weight: 300;
+            color:#dc3545;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        #Instructor .card {
+            /* display: flex; */
+            height: 600px;
+            width: 220px;
+            border: none;
+            color: #000;
+            background-color: white;
+            transition: transform 0.3s ease;
+            margin: 10px;
+            /* flex-direction: row; */
+            justify-content: space-between;
+        }
+
+        #Instructor .card:hover {
+            transform: scale(1.03);
+        }
+
+        #Instructor .card-body i {
+            background-color:#dc3545;
+            color: white;
+            font-size: 12px;
+            border-radius: 5px;
+            margin: 0 5px;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        #Instructor .card img {
+            height: 400px;
+            object-fit: cover;
+        }
+        #Instructor .card p{
+            font-size: 20px;
+        }
+        .container2{
+            display: flex ;
+            width: 100%;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+
+        #about h1{
             text-transform: uppercase;
         text-align: center;
         font-family: var(--bs-body-font-family);
@@ -111,6 +218,7 @@
         color: black;
         text-align:inherit;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 15px;
     }
     .side1{
         text-align: center;
@@ -123,8 +231,9 @@
         border: none;
         border-radius: 10px;
         padding:10px;
-        width: fit-content;
+        width: px;
         color: white;
+        font-size: 15px;
     }
     .main{
         display: flex;
@@ -145,25 +254,18 @@
         color: #dc3545;
         text-align: center;
         font-weight: 100;
-      }
-      #students h1{
-      color: #dc3545;
-      text-align: center;
-      font-weight: 100;
-      text-transform: uppercase;
-
     }
     #courses .nav a{
         text-decoration: none;
         color: white;
-        margin: 0px 10px;
-        padding: 5px;
-        cursor: pointer;
+        margin: 0px 2px;
+        padding: 10px;
+        font-size: 15px;
+        width: 120px;
     }
     #courses .nav{
         display: flex;
         flex-direction: row;
-        margin: 0px 30px;
         /* justify-content:space-around; */
     }
     #courses .nav #fullstack{
@@ -173,14 +275,15 @@
     }
     #courses .students {
         display: flex;
-        margin: 20px;
-        justify-content: space-between;
+        /* margin: 20px; */
     }
     #courses .students img{
-        width: 250px;
+        width: 220px;
         border: 5px solid white;
+        margin: 10px 10px;
         border-radius: 5px;
     }
+   
     .arrow i{
         color: #dc3545;
         font-size: 40px;
@@ -193,126 +296,24 @@
         
     }
 
-     .background{
-    background-color: black;
- }
- 
- 
- body {
-            color: white;
-        }
-
-        .instructors-section {
-            padding: 40px 20px;
-        }
-
-        .instructors-title {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #dc3545;
-            font-weight: 100;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .card {
-            /* height: 300px; */
-            /* width: 300px; */
-            background-color: #1a1a1a;
-            border: none;
-            color: white;
-            transition: 600ms;
-            margin: 10px;
-            gap: 2px;
-        }
-
-        .card:hover {
-            transform: scale(1.04);
-        }
-
-        .card-body i {
-            color:white;
-            background-color: #dc143c;
-            padding: 5px;
-            border-radius: 5px;
-            font-size: 1.2rem;
-            margin: 0 5px;
-            cursor: pointer;
-        }
-
-        .card img {
-            height: 400px;
-            object-fit: cover;
-        }
-        .container{
-            display: flex ;
-            /* width: 100%; */
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-        }
-
-         
-
-    .about-section {
-      background-color:white;
-      padding: 60px 0;
-      text-align: center;
-    }
-
-    .about-section h1 {
-      color:#dc143c;
-      margin-bottom: 40px;
-      font-weight: 50;
-
-    }
-
-    .card-box {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
-
-    .about-card {
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-     
-      width: 300px;
-    }
-    #Location iframe{
-      width:800px;
-    }
-   
-
-    .about-card i {
-      font-size: 2.5rem;
-      color: #000;
-      margin-bottom: 15px;
-    }
-
-    .about-card h5 {
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .about-card p {
-      font-size: 0.95rem;
-      color: #333;
-    }
-    .contact-container i{
-     color: #dc143c; /* or use red / #ff0000 if you prefer */
+    #contact i{
+      color: #dc143c; /* or use red / #ff0000 if you prefer */
       font-size: 30px; /* Adjust size as needed */
       margin-bottom: 10px;
-    }
-    .mb-3 i:hover{
-      color: #dc143c; /* or use red / #ff0000 if you prefer */
-    }
+  }
+  #contact h2{
+    color: #dc143c;
+    font-weight: 300;
+    font-size: 40px;
+  }
+  #contact p{
+    font-size: 12px;
+
+  }
   form input{
       margin: 10px;
       /* display: flex; */
-      width: 440px;
+      width: 540px;
       border: 1px solid gainsboro;
       padding: 5px;
       border-radius: 5px;
@@ -340,9 +341,6 @@
   .Location iframe{
       width: 500px;
   }
-  #contact h2{
+  .icons i:hover{
     color: #dc143c;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight:100 ;
   }
