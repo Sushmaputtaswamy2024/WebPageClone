@@ -114,7 +114,8 @@ body {
       padding: 60px 0;
       text-align: center;
       font-size:calc(1.375rem + 1.5vw) ;
-      margin: 20px 0px ;
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
 
     #about-section h1 {
