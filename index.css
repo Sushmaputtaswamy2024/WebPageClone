@@ -267,6 +267,7 @@ body {
         padding: 10px;
         font-size: 15px;
         width: 120px;
+        cursor: pointer;
     }
     #courses .nav{
         display: flex;
@@ -322,6 +323,9 @@ body {
       border: 1px solid gainsboro;
       padding: 5px;
       border-radius: 5px;
+  }
+  form #subjects{
+    width: 500px;
   }
   form textarea{
       margin: 10px;
